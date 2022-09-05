@@ -1,10 +1,10 @@
 <?php
 /*
-* Plugin Name: ReCaptcha/NetSuite Form Integration
-* Description: Plugin uses an shortcode embedded with the publishable form URL from hardcoded NetSuite forms and validates a ReCaptcha 2.0 before submitting the data to NetSuite..
-* Version: 1.0
-* Author: BCS ProSoft
-* Author URI: https://www.bcsprosoft.com/netsuite
+* Plugin Name: reCAPTCHA for Embedded NetSuite Forms
+* Description: Plugin uses an shortcode embedded with the publishable form URL from hardcoded NetSuite forms and validates a ReCAPTCHA 2.0 before submitting the data to NetSuite.
+* Version: 1.1
+* Author: Patrick Haley
+* Author URI: https://github.com/patrickhaley/netsuite-recaptcha-wp-plugin
 */
 
 
@@ -45,9 +45,6 @@ function RCValidate($atts){
 	if ($_COOKIE['campaignevent']) {
 						$postto.="&campaignevent=".$_COOKIE['campaignevent'];
 					}
-    /*if (is_page('upwork'))	{					
-	echo ('posto'); var_dump ($postto,$redirectto);
-	}*/
 	try
 	
 	{
